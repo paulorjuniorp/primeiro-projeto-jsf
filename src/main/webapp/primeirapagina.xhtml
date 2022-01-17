@@ -11,7 +11,11 @@
 	<h:form>
 		<h:inputText id="campoNome" value="#{pessoaBean.nome}"/>
 		<br/>
-		<h:outputText id="campoSobrenome" value="#{pessoaBean.sobrenome}"/>
+		<h:inputText id="campoSobrenome" value="#{pessoaBean.sobrenome}"/>
+		<br/>
+		<h:outputText id="nomeCompleto" value="#{pessoaBean.nomeCompleto}"/>
+		<br/>
+		<h:commandButton value="mostrarNome" action="#{pessoaBean.mostarNomeCompleto}"/>
 	</h:form>
 </h:body>
 
